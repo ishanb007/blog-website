@@ -3,8 +3,8 @@
 
 <p><%= homeStartingContent %></p>
 <% posts.forEach(function(post){%>
-    <h1><%= post.title %></h1>
-    <p><%= post.content.slice(0,60) +"..." %></p>
-    <a href="/posts/<%=post.titleURL%>">Read More</a>
+    <h1><%= post.head %></h1>
+    <p><%= post.body.slice(0,60) +"..." %></p>
+    <a href="/posts/<%=post.tURL%>">Read More</a>
 <%})%>
 <%- include('partials/footer.ejs') -%>
